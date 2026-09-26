@@ -12,12 +12,6 @@
 
 Ingredient Alchemist is an AI-powered cooking companion that turns the ingredients on hand, along with your preferences and cooking constraints, into recipe ideas. Generated recipes are a starting point for your own judgment and creativity.
 
-## Explore
-
-- **Use the app:** [ingredientalchemist.com](https://ingredientalchemist.com)
-- **Read about data and privacy:** [Privacy Policy](https://ingredientalchemist.com/privacy-policy)
-- **Contact support:** [support@ingredientalchemist.com](mailto:support@ingredientalchemist.com)
-
 ## The product
 
 Start with what is in your kitchen. Add dietary preferences, allergies, available cooking surfaces, time, and other constraints, then ask the app to generate a set of recipe ideas. Signed-in users can keep a recipe history, save favorites, revisit recipes, and share a recipe page.
