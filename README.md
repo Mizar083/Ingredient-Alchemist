@@ -40,7 +40,7 @@ The short version: choose ingredients and preferences, generate recipe ideas wit
 | Area | Technology |
 | --- | --- |
 | Web application | Next.js 16, React 19, TypeScript |
-| Languages | `next-intl`; English, German, Spanish, and French locale resources |
+| LocalizationLocalization | `next-intl`; English, German, Spanish, and French locale resources |
 | Recipe generation and imagery | Genkit and Google Gemini |
 | Accounts and saved data | Firebase Authentication, Cloud Firestore, and Firebase Storage |
 | Hosting | Firebase App Hosting |
@@ -80,8 +80,14 @@ These links are provided for convenience and are not legal advice. Refer to the 
 
 ## Contributing
 
-Found a bug, have a question, or want to suggest an improvement? Read the [Contributing guide](CONTRIBUTING.md) before posting. Do not publish credentials, personal data, or exploitable security details in public issues or discussions.
+This repository contains the public documentation for Ingredient Alchemist.
+
+If you find a bug in the website, have a question, or want to suggest an improvement, please read the [Contributing guide](...) before opening an issue.
+
+The application source code and internal development workflow are maintained separately and are not part of this repository.
 
 ## License
 
-This documentation-only publication has no reuse license. No permission is granted to copy, modify, or redistribute its documentation or brand assets. The application source is not part of this public edition.
+No open-source license is currently provided for this repository.
+
+Unless otherwise stated, the contents of this repository remain subject to applicable copyright law. The application source code is not included in this repository.
