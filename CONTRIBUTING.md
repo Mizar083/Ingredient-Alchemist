@@ -17,7 +17,7 @@ Remove email addresses, account identifiers, recipe content you consider private
 
 Use GitHub Discussions for general questions and feature ideas once Discussions are enabled for this repository. The expected Discussions URL is:
 
-<[https://github.com/Mizar083/Ingredient-Alchemist-Code/discussions](https://github.com/Mizar083/Ingredient-Alchemist/discussions/1)>
+[https://github.com/Mizar083/Ingredient-Alchemist-Code/discussions](https://github.com/Mizar083/Ingredient-Alchemist/discussions/1)
 
 This destination was not publicly accessible when this guide was prepared. Repository maintainers should enable Discussions and confirm the link before publishing this guide. Until then, contact [support@ingredientalchemist.com](mailto:support@ingredientalchemist.com) for general inquiries.
 
