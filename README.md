@@ -10,60 +10,64 @@
 	<a href="https://ingredientalchemist.com">Open Ingredient Alchemist</a>
 </p>
 
-<p align="center">
-Ingredient Alchemist is an AI-powered cooking companion that turns the ingredients on hand, along with your preferences and cooking constraints, into recipe ideas. Generated recipes are a starting point for your own judgment and creativity.
-</p>
+## What is Ingredient Alchemist?
 
-## The product
+Ingredient Alchemist is an AI-powered cooking companion that turns ingredients you have, along with your preferences and cooking constraints, into recipe ideas. It is designed to help you decide what to cook; generated content is a starting point for your own judgment and creativity.
 
-Start with what is in your kitchen. Choose dietary preferences and allergies, set available cooking surfaces, time, and other constraints, then ask the app to generate a set of recipe ideas. Each recipe includes nutrition information and step-by-step cooking instructions. Signed-in users can keep a recipe history, save favorites, revisit recipes, and share a recipe page.
+## Features
 
-### Features
-
-- Generate multiple recipe ideas from available ingredients and cooking preferences.
+- Generate recipe ideas from available ingredients and cooking constraints.
 - Choose dietary preferences and allergies to guide recipe generation.
-- Follow step-by-step instructions and review a nutrition information table for each recipe.
-- Generate AI recipe imagery and request suggestions for additional ingredients.
-- Save, search, favorite, and share recipes with an account.
+- Get step-by-step cooking instructions and a nutrition information table for every recipe.
+- Generate AI images for recipes and request suggestions for additional ingredients.
+- Save recipes, search your recipe history, mark favorites, and share recipes with an account.
 - Use the interface in English, German, Spanish, or French. Translation coverage may vary by area.
+
+## Disclaimer: AI, Allergies, and Food Safety
+
+AI-generated recipes, instructions, and nutrition estimates can be inaccurate or incomplete. Dietary and allergen preferences are inputs to generation, not a guarantee that a recipe is safe for you. Check every ingredient, label, quantity, preparation step, and cooking temperature yourself. Do not use the app as medical or professional nutrition advice.
+
+## Screenshots / Demo
+
+Try the live website at [ingredientalchemist.com](https://ingredientalchemist.com). Product screenshots will be added to this documentation when approved captures are available.
 
 ## How it works
 
-1. You enter ingredients and choose the preferences or constraints that matter for your recipe.
-2. Google Gemini processes that request to produce recipe ideas with instructions, nutrition information and a image of the food. You can also request additional ingredient suggestions.
-3. If you use an account, recipes and preferences can be saved so you can revisit and organize them later.
+The short version: choose ingredients and preferences, generate recipe ideas with AI, then save or share recipes if you use an account. See [How Ingredient Alchemist works](HOW_IT_WORKS.md) for a simple diagram and user-level explanation.
 
-## Your information
+## Technology
 
-Ingredient Alchemist uses third-party services to provide the app. This is a brief overview; the [Privacy Policy](https://ingredientalchemist.com/privacy-policy) and [Cookie Policy](https://ingredientalchemist.com/cookie-policy) describe current practices and should be consulted for full details.
+| Area | Technology |
+| --- | --- |
+| Web application | Next.js 16, React 19, TypeScript |
+| Languages | `next-intl`; English, German, Spanish, and French locale resources |
+| Recipe generation and imagery | Genkit and Google Gemini |
+| Accounts and saved data | Firebase Authentication, Cloud Firestore, and Firebase Storage |
+| Hosting | Firebase App Hosting |
+
+## Development
+
+This public edition is a documentation and presentation hub; it does not include the runnable application source or deployment setup. The web application is developed separately, and its user-facing updates are reflected on the [live website](https://ingredientalchemist.com). Internal development workflows and service configuration are intentionally not published here.
+
+## Project Status
+
+Ingredient Alchemist is available as a live website. This public repository is its documentation and presentation hub. The README describes the user-facing product at a high level; features and availability may change as the application is updated. The product does not provide medical, professional nutrition, or food-safety advice.
+
+## Privacy / Data
+
+This summary is not a replacement for the [Privacy Policy](https://ingredientalchemist.com/privacy-policy), [Cookie Policy](https://ingredientalchemist.com/cookie-policy), or [Third-party services notice](https://ingredientalchemist.com/third-party). Those live pages describe current practices and are the reference for details such as retention and user rights.
 
 | Information | How it is used |
 | --- | --- |
 | Account details | Firebase Authentication supports account creation and sign-in. |
 | Preferences and saved recipes | For signed-in users, Firebase Firestore stores account preferences and saved recipe information, including favorites. |
-| Recipe request | Ingredients, dietary and allergen preferences, and cooking constraints are sent to Google Gemini to generate recipe content. Do not include sensitive personal information in a recipe request. |
-| Recipe imagery | When image generation is used, the image is generated through Google Gemini and may be stored with Firebase Storage to support the recipe experience. |
-| Cookies and technical information | The app and its service providers may use cookies or process technical information. See the [Privacy Policy](https://ingredientalchemist.com/privacy-policy), [Cookie Policy](https://ingredientalchemist.com/cookie-policy), and [Third-party services notice](https://ingredientalchemist.com/third-party). |
+| Recipe requests | Ingredients, dietary and allergen preferences, and cooking constraints are sent to Google Gemini to generate recipe content. Do not include sensitive personal information in a recipe request. |
+| Recipe imagery | Recipe images are generated through Google Gemini and may be stored with Firebase Storage to support the recipe experience. |
+| Cookies and technical information | The app and its service providers may use cookies or process technical information. See the live privacy, cookie, and third-party notices for details. |
 
-Recipe content and preferences are associated with an account when saved. For details about retention, account controls, deletion, and third-party processing, refer to the live policies or contact support. This summary does not replace those policies.
+Recipe content and preferences are associated with an account when saved. For information about retention, account controls, deletion, and third-party processing, refer to the live policies or contact [support](mailto:support@ingredientalchemist.com).
 
-## Technology
-
-| Area | Current implementation |
-| --- | --- |
-| Web application | Next.js 16, React 19, TypeScript |
-| Localization | `next-intl`; locale resources for English, German, Spanish, and French |
-| AI workflows | Genkit with Google Gemini for recipe generation, optional recipe imagery, and ingredient suggestions |
-| Identity and data | Firebase Authentication, Cloud Firestore, and Firebase Storage |
-| Abuse protection and hosting | Firebase App Check and Firebase App Hosting |
-
-## Public documentation scope
-
-This page is a user-facing overview. It intentionally leaves out internal implementation flows, security controls, service configuration, and operational details. The live policies below describe data practices in more detail.
-
-## Policies
-
-The live application is the current location of the legal text:
+Current legal pages:
 
 - [Privacy Policy](https://ingredientalchemist.com/privacy-policy)
 - [Terms and Conditions](https://ingredientalchemist.com/terms-and-conditions)
@@ -74,14 +78,10 @@ The live application is the current location of the legal text:
 
 These links are provided for convenience and are not legal advice. Refer to the live pages for current policy wording.
 
-## AI and food-safety note
+## Contributing
 
-AI-generated recipes, instructions, and nutrition estimates can be inaccurate or incomplete. Dietary and allergen preferences are inputs to generation, not a guarantee that a recipe is safe for you. Check every ingredient, label, quantity, preparation step, and cooking temperature yourself. Do not use the app as medical or professional nutrition advice.
+Found a bug, have a question, or want to suggest an improvement? Read the [Contributing guide](CONTRIBUTING.md) before posting. Do not publish credentials, personal data, or exploitable security details in public issues or discussions.
 
-## Project and contribution status
+## License
 
-This page is the public-facing project overview and documentation entry point. Confirm the repository's intended scope before treating every deployment or development feature as available to outside contributors. No software license is declared here; unless an explicit license is added, do not assume permission to reuse or redistribute the project. Contribution guidance and GitHub Discussions should be linked once they are enabled and their support expectations are defined.
-
-## Security and privacy
-
-Do not post credentials, private user data, or exploitable security details in public issues or discussions. For a security concern or a private support request, contact [support@ingredientalchemist.com](mailto:support@ingredientalchemist.com).
+This documentation-only publication has no reuse license. No permission is granted to copy, modify, or redistribute its documentation or brand assets. The application source is not part of this public edition.
